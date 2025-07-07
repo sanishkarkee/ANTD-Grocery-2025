@@ -10,7 +10,11 @@ const Hero = () => {
         <Row gutter={24}>
           {/* Carousel */}
           <Col lg={18}>
-            <Carousel autoplay={{ dotDuration: true }} autoplaySpeed={3000}>
+            <Carousel
+              autoplay={{ dotDuration: true }}
+              autoplaySpeed={3000}
+              style={{ height: '100%' }}
+            >
               <div>
                 <img src={image1} alt='Image-1' />
               </div>
@@ -28,7 +32,7 @@ const Hero = () => {
             <div className='heroBlocks'>
               <div className='holder'>
                 <div className='icon'>
-                  <i class='fa-solid fa-truck'></i>
+                  <i className='fa-solid fa-truck'></i>
                 </div>
 
                 <div className='content'>
@@ -39,7 +43,7 @@ const Hero = () => {
 
               <div className='holder'>
                 <div className='icon'>
-                  <i class='fa-solid fa-sack-dollar'></i>
+                  <i className='fa-solid fa-sack-dollar'></i>
                 </div>
 
                 <div className='content'>
@@ -50,7 +54,7 @@ const Hero = () => {
 
               <div className='holder'>
                 <div className='icon'>
-                  <i class='fa-solid fa-headset'></i>
+                  <i className='fa-solid fa-headset'></i>
                 </div>
 
                 <div className='content'>
