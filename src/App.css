@@ -133,6 +133,7 @@ img {
   border: none;
   cursor: pointer;
   transition: opacity 0.3s linear;
+  color: #ffff;
 }
 
 .topBar .otherInfo button:hover {
@@ -182,9 +183,9 @@ img {
 }
 
 .header nav a:hover,
-.header nav a.active,
+.header nav ul li a.active,
 .ant-drawer nav a.active {
-  color: #27c4ff;
+  color: #f14705;
 }
 
 .ant-drawer nav ul {
