@@ -497,3 +497,15 @@ img {
     display: none;
   }
 }
+
+
+
+/* -------------Carousel---------------- */
+.ant-carousel .slick-dots-bottom {
+  bottom: 20px;
+}
+
+.ant-carousel .slick-dots li::after {
+  background: #f14705;
+
+}

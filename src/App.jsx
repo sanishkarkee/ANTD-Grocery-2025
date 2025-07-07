@@ -1,8 +1,8 @@
-import React from 'react';
 const { Header, Content, Footer } = Layout;
 import './App.css';
 import { Layout } from 'antd';
 import AppHeader from './components/common/Header';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
   return (
@@ -11,7 +11,11 @@ function App() {
         <Header>
           <AppHeader />
         </Header>
-        <Content>Content</Content>
+
+        <Content>
+          <AppRoutes />
+        </Content>
+
         <Footer>Footer</Footer>
       </Layout>
     </>
@@ -19,3 +23,9 @@ function App() {
 }
 
 export default App;
+
+// NOTE:
+// 1) Why are we importing ROUTE only in <Content></Content> :
+// Header: stays the same on every page
+// Content: changes depending on the route
+// Footer: stays the same on every page
