@@ -12,25 +12,25 @@ const products = [
     image: img1,
     title:
       'Fairy Clean & Fresh Washing Up Liquid Pomegranate &amp; Honeysuckle 520 ml',
-    price: '£2.00',
+    price: 'Rs.200',
   },
   {
     key: '2',
     image: img2,
     title: 'Colgate Triple Action Toothpaste 100ml',
-    price: '£1.50',
+    price: 'Rs.150',
   },
   {
     key: '3',
     image: img3,
     title: 'Breeze Toilet Tissue Soft White 24 Roll',
-    price: '£5.70',
+    price: 'Rs.570',
   },
   {
     key: '4',
     image: img4,
     title: 'Comfort intense Fresh Sky Fabric Conditioner Liquid 60 Wash 900 ML',
-    price: '£4.50',
+    price: 'Rs.450',
   },
 ];
 

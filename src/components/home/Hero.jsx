@@ -2,8 +2,11 @@ import { Carousel, Col, Row } from 'antd';
 import image1 from '../../assets/images/banner-img1.jpg';
 import image2 from '../../assets/images/banner-img2.jpg';
 import image3 from '../../assets/images/banner-img3.jpg';
+import { useState } from 'react';
 
 const Hero = () => {
+  const [sanish, setSanish] = useState();
+  
   return (
     <>
       <div className='heroBlock'>
