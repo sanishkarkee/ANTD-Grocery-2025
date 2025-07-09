@@ -3,6 +3,7 @@ import './App.css';
 import { Layout } from 'antd';
 import AppHeader from './components/common/Header';
 import AppRoutes from './routes/AppRoutes';
+import FooterWidget from './components/common/FooterWidget';
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
           <AppRoutes />
         </Content>
 
-        <Footer>Footer</Footer>
+        <Footer>
+          <FooterWidget />
+        </Footer>
       </Layout>
     </>
   );
