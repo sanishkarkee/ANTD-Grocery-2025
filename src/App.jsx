@@ -4,6 +4,7 @@ import { Layout } from 'antd';
 import AppHeader from './components/common/Header';
 import AppRoutes from './routes/AppRoutes';
 import FooterWidget from './components/common/FooterWidget';
+import FooterCopyRight from './components/common/FooterCopyRight';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 
         <Footer>
           <FooterWidget />
+          <FooterCopyRight />
         </Footer>
       </Layout>
     </>
