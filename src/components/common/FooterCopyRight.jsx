@@ -1,6 +1,6 @@
 import React from 'react';
 import payment from '../../assets/images/payment.png';
-import { BackTop } from 'antd';
+import { FloatButton } from 'antd';
 
 const FooterCopyRight = () => {
   return (
@@ -13,7 +13,7 @@ const FooterCopyRight = () => {
           </div>
         </div>
 
-        <BackTop />
+        <FloatButton.BackTop />
       </div>
     </>
   );
