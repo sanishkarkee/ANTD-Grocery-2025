@@ -39,9 +39,9 @@ const FooterWidget = () => {
     <>
       <div className='footerWidget'>
         <div className='container'>
-          <Row gutter={24}>
+          <Row gutter={[24, 24]}>
             {/* Featured */}
-            <Col md={6}>
+            <Col md={8} sm={12} xs={12}>
               <h3>Featured</h3>
               <List
                 itemLayout='horizontal'
@@ -59,7 +59,7 @@ const FooterWidget = () => {
             </Col>
 
             {/* Top Rated */}
-            <Col md={6}>
+            <Col md={8} sm={12} xs={12}>
               <h3>Top Rated</h3>
               <List
                 itemLayout='horizontal'
@@ -77,7 +77,7 @@ const FooterWidget = () => {
             </Col>
 
             {/* Tags */}
-            <Col md={6}>
+            <Col md={8} sm={12} xs={12}>
               <h3>Tags</h3>
 
               <div className='tags'>
@@ -94,7 +94,7 @@ const FooterWidget = () => {
             </Col>
 
             {/* Recent Posts */}
-            <Col md={6}>
+            <Col md={8} sm={12} xs={12}>
               <h3>Recent Posts</h3>
               <List
                 size='small'

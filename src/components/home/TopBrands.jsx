@@ -31,10 +31,10 @@ const TopBrands = () => {
         <h2>Top Brands</h2>
       </div>
 
-      <Row gutter={24}>
+      <Row gutter={[24, 24]}>
         {products.map((product) => {
           return (
-            <Col sm={6} key={product.key}>
+            <Col sm={8} md={6} xs={12} key={product.key}>
               <div className='content'>
                 <div className='image'>
                   <img src={product.image} />

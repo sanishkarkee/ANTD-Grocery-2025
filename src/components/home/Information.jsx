@@ -6,8 +6,8 @@ const Information = () => {
   return (
     <>
       <div className='block informationBlock'>
-        <Row gutter={24}>
-          <Col md={12}>
+        <Row gutter={[24, 24]}>
+          <Col md={12} sm={12} xs={24}>
             <div
               className='holder'
               style={{
@@ -19,7 +19,7 @@ const Information = () => {
               <div className='price'>Rs.60</div>
             </div>
           </Col>
-          <Col md={12}>
+          <Col md={12} sm={12} xs={24}>
             <div
               className='holder'
               style={{

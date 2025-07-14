@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <>
       <div className='heroBlock'>
-        <Row gutter={24}>
+        <Row gutter={[24, 24]}>
           {/* Carousel */}
-          <Col lg={18}>
+          <Col lg={18} xs={24}>
             <Carousel
               autoplay={{ dotDuration: true }}
               autoplaySpeed={3000}
@@ -28,7 +28,7 @@ const Hero = () => {
           </Col>
 
           {/* Information */}
-          <Col lg={6}>
+          <Col lg={6} xs={24}>
             <div className='heroBlocks'>
               <div className='holder'>
                 <div className='icon'>

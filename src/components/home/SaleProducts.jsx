@@ -41,10 +41,10 @@ const SaleProducts = () => {
       <div className='block products'>
         <h2>Sale Products</h2>
 
-        <Row gutter={24}>
+        <Row gutter={[24, 24]}>
           {products.map((product) => {
             return (
-              <Col lg={6} key={product.key}>
+              <Col lg={6} md={8} sm={12} xs={24} key={product.key}>
                 <div className='content'>
                   <div className='image'>
                     <img src={product.image} alt={`product-${product.key}`} />
