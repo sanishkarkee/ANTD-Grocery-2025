@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   FacebookFilled,
   InstagramFilled,
   MailOutlined,
+  MenuOutlined,
   MobileOutlined,
   TwitterSquareFilled,
   UserOutlined,
 } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';
+import { Button, Drawer } from 'antd';
 
 const AppHeader = () => {
+  const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
       <div className='container'>
@@ -65,7 +77,7 @@ const AppHeader = () => {
         <div className='header separator'>
           <div className='logo'>BigMart</div>
 
-          <nav>
+          <nav className='mobileHidden'>
             <ul>
               <li>
                 <NavLink to='/'>Home</NavLink>
@@ -84,6 +96,38 @@ const AppHeader = () => {
               </li>
             </ul>
           </nav>
+
+          <div className='mobileVisible'>
+            <MenuOutlined onClick={showDrawer} />
+
+            <Drawer
+              title='BigMart'
+              placement='left'
+              closable={{ 'aria-label': 'Close Button' }}
+              onClose={onClose}
+              open={open}
+            >
+              <nav>
+                <ul>
+                  <li>
+                    <NavLink to='/'>Home</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to='about'>About</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to='shop'>Shop</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to='faq'>FAQ</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to='contact'>Contact</NavLink>
+                  </li>
+                </ul>
+              </nav>
+            </Drawer>
+          </div>
         </div>
       </div>
     </>
